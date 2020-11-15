@@ -9,14 +9,10 @@ target_include_directories(fascodeutiltest PRIVATE include/)
 target_link_libraries(fascodeutiltest fascode_utils_libcpp_STATIC)
 
 set_target_properties(fascode_utils_libcpp PROPERTIES
-        PUBLIC_HEADER include/custom_exec.hpp
-        include/libfas.hpp
-        include/message.hpp
+        PUBLIC_HEADER "include/custom_exec.hpp;include/libfas.hpp;include/message.hpp"
 )
 set_target_properties(fascode_utils_libcpp_STATIC PROPERTIES
-        PUBLIC_HEADER include/custom_exec.hpp
-        include/libfas.hpp
-        include/message.hpp
+        PUBLIC_HEADER "include/custom_exec.hpp;include/libfas.hpp;include/message.hpp"
 )
 install(TARGETS fascode_utils_libcpp
     EXPORT fascode_utils_libcpp-export
