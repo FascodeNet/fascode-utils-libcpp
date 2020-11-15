@@ -7,4 +7,4 @@ add_library(fascode_utils_libcpp_STATIC
   STATIC
     ${SereneSource}
   ) 
-set_target_properties(fascode_utils_libcpp_STATIC PROPERTIES OUTPUT_NAME fascode_utils_libcpp)
+set_target_properties(fascode_utils_libcpp PROPERTIES OUTPUT_NAME fascodeutilscpp)
