@@ -24,6 +24,6 @@ install(TARGETS fascode_utils_libcpp_STATIC
     PUBLIC_HEADER  DESTINATION include/libfascodeutilscpp_static)
 
 install(EXPORT fascode_utils_libcpp_STATIC-export
-    FILE fascode_utils_libcpp_STATIC-config.cmake
+    FILE fascode_utils_libcpp_STATICConfig.cmake
     DESTINATION share/cmake/fascode_utils_libcpp_STATIC/
     )
