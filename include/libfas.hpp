@@ -5,4 +5,5 @@ namespace FascodeUtil{
         public:
             int a;
     };
+    
 }
