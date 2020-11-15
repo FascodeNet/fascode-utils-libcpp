@@ -14,23 +14,16 @@ set_target_properties(fascode_utils_libcpp PROPERTIES
 set_target_properties(fascode_utils_libcpp_STATIC PROPERTIES
         PUBLIC_HEADER "include/custom_exec.hpp;include/libfas.hpp;include/message.hpp"
 )
+
+install(TARGETS fascode_utils_libcpp_STATIC
+    LIBRARY        DESTINATION lib)
+
 install(TARGETS fascode_utils_libcpp
     EXPORT fascode_utils_libcpp-export
-    LIBRARY        DESTINATION lib
+    LIBRARY        DESTINATION lib  
     INCLUDES       DESTINATION include
     PUBLIC_HEADER  DESTINATION include/libfascodeutilscpp)
-
 install(EXPORT fascode_utils_libcpp-export
     FILE libfascodeutilscpp-config.cmake
     DESTINATION share/cmake/libfascodeutilscpp/
-    )
-install(TARGETS fascode_utils_libcpp_STATIC
-    EXPORT fascode_utils_libcpp_STATIC-export
-    LIBRARY        DESTINATION lib
-    INCLUDES       DESTINATION include
-    PUBLIC_HEADER  DESTINATION include/libfascodeutilscpp_static)
-
-install(EXPORT fascode_utils_libcpp_STATIC-export
-    FILE fascode_utils_libcpp_STATICConfig.cmake
-    DESTINATION share/cmake/fascode_utils_libcpp_STATIC/
     )
