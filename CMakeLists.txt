@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.9)
 project(fascode_utils_libcpp CXX)
 set(CMAKE_INCLUDE_CURRENT_DIR_IN_INTERFACE ON) 
 add_subdirectory(src)
